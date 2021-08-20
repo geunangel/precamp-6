@@ -1,0 +1,13 @@
+input {
+    background-color: #c3eeff;
+}
+
+/* class = 다중 선택자 */
+.qqq {
+    background-color: #faeacb;
+}
+
+/* id = 고유 선택자 */
+#zzz {
+    background-color: #d3f0d3;
+}

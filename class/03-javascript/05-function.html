@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>실습문제</title>
+    <script>
+        //인증번호 전송 + 타이머 작동
+        function aaa() {
+            const ccc = String(Math.floor(Math.random()*1000000)).padStart(6,"0")  
+            document.getElementById("bbb").innerText = ccc
+            document.getElementById("bbb").style.color = "#"+ccc
+
+            ddd();
+        }
+
+        //타이머 실행
+        function ddd() {
+            let timer = 10;
+            setInterval(() => {
+                if(timer > 0){
+                    timer = timer - 1
+                    //timer -= 1 방법도 같음
+                }
+                document.getElementById("ccc").innerText = timer
+
+                //0이 되었을때 버튼 비활성화
+                if(timer === 0) {
+                    document.getElementById("eee").disabled = true;
+                }
+            }, 1000) //1000=1초s
+            
+        }
+
+        function eee() {
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <span id="bbb">000000</span>
+    <button onclick="aaa()">인증번호 전송</button>
+    <br>
+    <span id="ccc">10</span>
+    <button id='eee' onclick="fff()">인증완료</button>
+</body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper__header .title {
+    color: #55b2d4;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.title__ {
+    font-size: 1px;
+    padding: 5px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper__header {
+    width: 100%;
+    height: 25px;
+    /* background-color: cornflowerblue; */
+}
+
+.wrapper__word {
+    width: 222px;
+    height: 168px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.word__game{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: #999999;
+}
+
+.word__button {
+    background-color: #ffffff;
+    width: 38px;
+    height: 24px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.wrapper__lotto {
+    width: 222px;
+    height: 168px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #999999;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lotto__game{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    color: #999999;
+}
+
+.lotto__button__box {
+    width: 130px;
+    height: 21px;
+    background-color: #fff400;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.lotto__button {
+    background-color: #ffffff;
+    width: 62px;
+    height: 24px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

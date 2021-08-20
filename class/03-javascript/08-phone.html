@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>휴대폰 포커스</title>
+    <script>
+
+        // 첫번째 input박스에서 두번째 input박스로 커서를 옮기는 기능
+        function changePhone() {
+            const phone1 = document.getElementById("phone1").value
+
+            if(phone1.length === 3){
+                document.getElementById("phone2").focus()
+            }
+        }
+
+        // 두번째 input박스에서 세번째 input박스로 커서를 옮기는 기능
+        function changePhone2() {
+            const phone1 = document.getElementById("phone2").value
+            
+            if(phone1.length === 4){
+                document.getElementById("phone3").focus()
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="phone1" type="text" size="3" onchange="changePhone()" onkeyup="onchange()" /> - 
+    <input id="phone2" type="text" size="4" onchange="changePhone2()"  onkeyup="onchange()" /> - 
+    <input id="phone3" type="text" size="4" />
+    
+</body>
+</html>
