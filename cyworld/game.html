@@ -5,7 +5,26 @@
     <link href="styles/game.css" rel="stylesheet"/>
     <script>
         function lotto() {
-            document.getElementById
+            document.getElementById("")
+        }
+
+        //끝말잇기
+        function startWord() {
+            const word = document.getElementById("word").innerText //뉴비즈코드
+            const lastword = word[word.length - 1] // 드
+
+            const myword = document.getElementById("myword").value //드**
+            const firstword = myword[0] //드
+
+            if(lastword===firstword){
+                //alert("정답입니다.")
+                document.getElementById("result").innerText = "정답입니다"
+                document.getElementById("word").innerText = myword
+                document.getElementById("myword").value = ""
+            }else {
+                //alert("땡")
+                document.getElementById("result").innerText = "땡"
+            } 
         }
     </script>
 </head>
@@ -22,13 +41,13 @@
             <div>끝말잇기</div>
             <div class="word__game">
                 <span>제시어 : </span>
-                <span>뉴비즈코드</span>
+                <span id="word">뉴비즈코드</span>
             </div>
             <div>
-                <input type="text" value="단어를 입력하세요.">
-                <button class="word__button">검색</button>
+                <input id="myword" type="text" placeholder="단어를 입력하세요.">
+                <button class="word__button" onclick="startWord()">검색</button>
             </div>
-            <div>
+            <div id="result">
                 결과!!
             </div>
         </div>
